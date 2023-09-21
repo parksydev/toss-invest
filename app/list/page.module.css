@@ -1,0 +1,72 @@
+@import url('https://static.toss.im/tps/main.css');
+@import url('https://static.toss.im/tps/others.css');
+
+.container {
+  font-family: 'Toss Product Sans';
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.listBox {
+  background-color: rgb(250, 250, 252);
+  box-shadow: 1px 1px 0px 0px lightgray;
+  border-radius: 10px;;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  min-width: 350px;
+}
+
+.listWrap {
+  padding: 10px;
+}
+
+.data {
+  font-weight: 900;
+  margin-left: 10px;
+}
+
+.mainButton {
+  margin: 25px;
+  width: 220px;
+  height: 45px;
+  background-color: rgb(49, 130, 245);
+  border: 0px;
+  border-radius: 12px;
+  color: rgb(250, 250, 250);
+  font-family: 'Toss Product Sans';
+  font-size: 14px;
+}
+
+.mainButton:hover {
+  cursor: pointer;
+}
+
+.deleteButton {
+  border: 0;
+  width: 100px;
+  height: 25px;
+  background-color: rgb(250, 250, 252);
+  border: 1px lightgray solid;
+  border-radius: 5px;
+}
+
+.deleteButton:hover {
+  background-color: rgb(243, 243, 248);
+  cursor: pointer;
+}
+
+.lesserafimWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+
+.lesserafim {
+  max-width: 285px;
+  height: auto;
+  margin: 10px;
+}

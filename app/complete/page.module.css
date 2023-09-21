@@ -1,0 +1,107 @@
+@import url('https://static.toss.im/tps/main.css');
+@import url('https://static.toss.im/tps/others.css');
+
+.container {
+  font-family: 'Toss Product Sans';
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.checkWrap {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 300px;
+  animation-fill-mode: forwards;
+}
+
+.checkWrap {
+  animation-duration: 1s;
+  animation-name: slidein;
+}
+
+.checkWrap > span {
+  font-size: 25px;
+  font-weight: 600;
+  padding: 30px;
+  opacity: 0;
+}
+
+.checkWrap > span {
+  animation-delay: 1s;
+  animation-name: slideup;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.checkImg {
+  width: 130px;
+}
+
+.boxWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+
+.linkBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 25px;
+  width: 220px;
+  height: 45px;
+  background-color: rgb(49, 130, 245);
+  border: 0px;
+  border-radius: 12px;
+  color: rgb(250, 250, 250);
+  font-size: 15px;
+  text-decoration: none;
+  opacity: 0;
+}
+
+.linkBox {
+  animation-delay: 1.7s;
+  animation-name: boxshow;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+}
+
+.linkBox > span {
+  margin-left: 1px;
+}
+
+.arrow {
+  font-size: 20px;
+  margin-left: 2px;
+}
+
+/* animations */
+@keyframes slidein {
+  from {
+    margin-top: 300px;
+  }
+  to {
+    margin-top: 200px;
+  }
+}
+
+@keyframes slideup {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes boxshow {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,159 @@
+/* Header.js */
+
+.header {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: rgb(232, 243, 255); */
+}
+
+.headerWrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 87%;
+}
+
+.logoWrap {
+  display: flex;
+  align-items: center;
+}
+
+.logoImg {
+  width: 110px;
+}
+
+/* Hamburger.js */
+
+.menuicon {
+  display: none;
+}
+.menuicon + label {
+  display: block;
+  width: 20px;
+  height: 18px;
+  position: relative;
+  cursor: pointer;
+}
+.menuicon + label span{
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  border-radius: 30px;
+  background-color: rgb(71, 71, 71);
+  transition: all 0.3s;
+}
+.menuicon + label span:nth-child(1) {
+  top: 0;
+}
+.menuicon + label span:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.menuicon + label span:nth-child(3) {
+  bottom: 0;
+}
+.menuicon:checked + label span:nth-child(1) {
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  background-color: white;
+}
+.menuicon:checked + label span:nth-child(2) {
+  opacity: 0;
+  background-color: white;
+}
+.menuicon:checked + label span:nth-child(3) {
+  bottom: 50%;
+  transform: translateY(50%) rotate(-45deg);
+  background-color: white;
+}
+
+.sidebar {
+  width: 300px;
+  height: 100%;
+  background-color: #222;
+  position: fixed;
+  top: 0;
+  left: -300px;
+  z-index: -1;
+  transition: all 0.3s;
+}
+.menuicon:checked + label + div {
+  left: 0;
+}
+
+/* Main.js */
+
+@import url('https://static.toss.im/tps/main.css');
+@import url('https://static.toss.im/tps/others.css');
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(232, 243, 255);
+  margin-top: 15%;
+}
+
+.mainWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mainTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 600;
+  font-size: 28px;
+  font-family: 'Toss Product Sans';
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.mainSubTitle {
+  font-weight: 500;
+  font-size: 15px;
+  color: rgb(88, 88, 88);
+}
+
+.mainImg {
+  width: 250px;
+  margin: 10px;
+}
+
+.mainButtonWrap {
+  padding: 20px;
+}
+
+.mainButton {
+  margin: 25px;
+  width: 220px;
+  height: 45px;
+  background-color: rgb(49, 130, 245);
+  border: 0px;
+  border-radius: 12px;
+  color: rgb(250, 250, 250);
+  font-family: 'Toss Product Sans';
+  font-size: 14px;
+}
+
+.mainButton:hover {
+  cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.footerContent {
+  font-size: 11px;
+  margin: 0;
+  color: gray;
+}
