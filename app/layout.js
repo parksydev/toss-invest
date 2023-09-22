@@ -7,6 +7,8 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata = {
   title: '토스증권 - 토스 모의투자 시작하기',
   description: '투자를 모두에게 토스증권',
+  name: "viewport",
+  content: "initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=no;"
 }
 
 export default function RootLayout({ children }) {
